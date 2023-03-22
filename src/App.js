@@ -5,6 +5,7 @@ import Quiz from './triviaQuiz'
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(0)
+  console.log(selectedCategory);
 
   return (
     <div>

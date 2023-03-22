@@ -12,8 +12,8 @@ export default function CategoryList({ setSelectedCategory }) {
         <>
             <h1>hi</h1>
             <div className='block'>
-                {categories && categories.trivia_categories.map(category =>
-                    <li><div onClick={() => setSelectedCategory(category.id)}>{category.name}</div></li>
+                {categories && categories.trivia_categories.map((category, ind) =>
+                    <div key={ind} ><li onClick={() => setSelectedCategory(category.id)}>{category.name}</li></div>
                 )
                 }
             </div>
